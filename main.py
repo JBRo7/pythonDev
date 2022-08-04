@@ -1,15 +1,21 @@
 
+from utilities import *
+from shopping.shopping_cart import *
+import random
 
-#map, filter, zip, and reduce
-my_list = [1,2,3]
-def multiply_by2(item):
-    return item*2
-    """new_list = []
-    for item in li:
-        new_list.append(item*2)
-    return new_list"""
-print(list(map(multiply_by2, my_list)))
-print(my_list)
+print(dir(random))
+
+if __name__ == '__main__':
+    x=2
+    y=3
+
+    print("X*Y=", multiply(x, y))
+    print("X/Y=", divide(x, y))
+
+    print("You purchased:", buy(input("What did you buy? ")))
+
+
+
 
 
 
